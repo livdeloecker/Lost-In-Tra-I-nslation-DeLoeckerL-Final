@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Week 10</title>
+
+  <!-- Tailwind -->
+  <link rel="stylesheet" href="dist/output.css">
+
+  <!-- Google Font (zelfde als homepage) -->
+  <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100 min-h-screen">
+
+  <main class="max-w-4xl mx-auto py-12 px-6">
+
+    <!-- Titel -->
+    <h1 class="text-4xl font-bold text-blue-700 mb-4" style="font-family: 'Russo One'">
+      Week 10
+    </h1>
+
+    <!-- Subtitel -->
+    <h3 class="text-2xl font-semibold text-gray-800 mb-6">
+      ChatGPT
+    </h3>
+ <!-- Kleine titel -->
+        <div class="text-sm text-black mb-8">
+           Liv De Loecker 1GDM2
+    <!-- Tekst -->
+    <p class="text-lg leading-relaxed text-gray-700 bg-white p-6 rounded-xl shadow-md mb-10">
+      
+      Deze week heb ik al mijn weekpagina’s herschreven met Tailwind. Ik heb de bestaande styling aangepast zodat alles nu werkt met tailwind.css. Hierdoor is de code duidelijker, overzichtelijker en makkelijker om mee te werken. Tijdens dit proces heb ik ChatGPT ingezet om bepaalde stijlkeuzes te verduidelijken of te verbeteren.
+      <br> heb ik mijn beste prompt en de bijbehorende beste reactie geselecteerd en toegevoegd aan het document. Hiermee laat ik zien welke input ik heb gebruikt en welk resultaat daaruit voortkwam, als voorbeeld van mijn werkwijze en de kwaliteit van de output. <br>
+      <br>Beste prompt:<br>
+      Ik wil mijn HTML-pagina verbeteren met Tailwind. Kun je laten zien hoe ik mijn bestaande HTML-structuur kan omzetten naar nette, overzichtelijke Tailwind-klassen? Geef concrete voorbeelden, leg uit waarom je bepaalde klassen gebruikt en toon ook hoe ik de lay-out, kleuren en spacing kan optimaliseren.Gebruik deze html-code:<br>
+      &lt;!DOCTYPE html&gt; <br>
+        &lt;html lang="nl"&gt; <br>
+        &lt;head&gt; <br>
+            &lt;meta charset="UTF-8" /&gt;<br>
+            &lt;title&gt;Homepage&lt;/title&gt;<br>
+            &lt;link href="https://fonts.googleapis.com/css2?family=Russo+One&amp;display=swap" rel="stylesheet" /&gt; <br>
+            &lt;link rel="stylesheet" href="dist/output.css"&gt; <br>
+            &lt;link rel="stylesheet" href="index.css" /&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+            &lt;main class="page"&gt;<br>
+            &lt;div class="topline"&gt;BP HTML 00 Start&lt;/div&gt;<br>
+            &lt;h1&gt;Homepage&lt;/h1&gt;<br>
+            &lt;div class="subtitel"&gt;Lost In Tra[I]Nslation&lt;/div&gt; <br>
+            &lt;div class="klein-titel"&gt;Opdracht Van Liv De Loecker&lt;/div&gt; <br>
+            &lt;div class="info-rij"&gt;        <br>
+                &lt;p&gt;Benieuwd hoe mijn proces stap voor stap vorm krijgt? &lt;br&gt; <br>
+                Duik in de weken hieronder en volg mijn reis&lt;/p&gt; <br>
+                &lt;p&gt;Klik op een week en kijk mee achter de schermen!&lt;/p&gt; <br>     
+            &lt;/div&gt;      <br>
+            &lt;div class="weeks"&gt;        <br>
+                &lt;a class="week-link" href="week1.html"&gt;Week 1&lt;/a&gt; <br>    
+                &lt;a class="week-link" href="week2.html"&gt;Week 2&lt;/a&gt; <br>   
+                &lt;a class="week-link" href="week3.html"&gt;Week 3&lt;/a&gt; <br>       
+                &lt;a class="week-link" href="week4.html"&gt;Week 4&lt;/a&gt; <br>       
+                &lt;a class="week-link" href="week5.html"&gt;Week 5&lt;/a&gt; <br>    
+            &lt;/div&gt; <br>
+            &lt;/main&gt; <br>
+        &lt;/body&gt; <br>
+        &lt;/html&gt; <br>
+        
+      <br>Beste Reactie:<br>
+      OPTIE 1 — Enkel Tailwind gebruiken (meest proper in jouw project)<br>
+      Je zet het achtergrondbeeld via inline Tailwind classes en gebruikt een blauw transparant overlay bovenop het beeld. <br> ⭐ HTML voorbeeld voor je index.html <br> <br>
+            &lt;body class="relative min-h-screen bg-cover bg-center" 
+            style="background-image: url('./screenshot/jouwfoto.png')"&gt; <br>
+        &lt;!-- Donkerblauwe transparante overlay --&gt; <br>
+        &lt;div class="absolute inset-0 bg-blue-900 bg-opacity-60"&gt;&lt;/div&gt; <br><br>
+
+        &lt;!-- ALLE CONTENT --&gt; <br>
+        &lt;main class="relative z-10"&gt; <br>
+            ... jouw homepage inhoud ...
+        &lt;/main&gt; <br>
+        &lt;/body&gt; <br>
+
+    </p>
+
+    <!-- Afbeeldingen gallery (optioneel) -->
+    <!-- Als je geen afbeeldingen hebt, mag je deze hele div verwijderen -->
+
+    <!-- Knop terug naar homepage -->
+    <a href="index.html"
+       class="inline-block bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg mb-10 transition">
+       ⬅ Terug naar homepage
+    </a>
+
+    <!-- Navigatie naar andere weken -->
+    <div class="flex flex-wrap gap-3 mb-10">
+      <a href="week1.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">Week 1</a>
+      <a href="week2.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">Week 2</a>
+      <a href="week3.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">Week 3</a>
+      <a href="week4.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">Week 4</a>
+      <a href="week5.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">Week 5</a>
+      <a href="week6.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">Week 6</a>
+      <a href="week7.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">Week 7</a>
+      <a href="week8.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">Week 8</a>
+      <a href="week9.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">Week 9</a>
+      <a href="week10.html" class="bg-blue-700 text-white px-4 py-2 rounded-lg">Week 10</a>
+      <a href="week11.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">Week 11</a>
+      <a href="week12.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">Week 12</a>
+      <a href="week13.html" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg">Week 13</a>
+    </div>
+
+    <footer class="w-full bg-blue-700 mt-auto" style="background-color: #030931;">
+        <div class="max-w-4xl mx-auto px-6 py-8 text-center text-sm text-white">
+          <p class="mb-4">
+            Bekijk de code op
+            <a
+              href="https://github.com/livdeloecker/Lost-In-Tra-I-nslation-DeLoeckerL-Final"
+              target="_blank"
+              class="underline"
+              style="color: #DEFF00;"
+            >
+              GitHub
+            </a>
+          </p>
+
+          <a
+            href="./src/jezipfile.zip"
+            download
+            class="inline-block px-6 py-3 rounded-lg text-black font-medium"
+            style="background-color: #DEFF00;"
+          >
+            Download ZIP
+          </a>
+        </div>
+      </footer>
+  </main>
+</body>
+</html>
